@@ -1,0 +1,42 @@
+{
+  "name": "panoramio-api",
+  "description": "A wrapper for the Panoramio API",
+  "keywords": [
+    "api",
+    "panoramio"
+  ],
+  "version": "0.1.0",
+  "homepage": "http://dschoeni.github.com/panoramio-api/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dschoeni/panoramio-api.git"
+  },
+  "author": {
+    "name": "Dominik Schöni",
+    "email": "panoramio-api@theelysianfields.ch",
+    "url": "http://theelysianfields.ch/"
+  },
+  "main": "./lib/panoramio.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/jshint .",
+    "pretest": "npm run-script lint",
+    "test": "./node_modules/.bin/_mocha test",
+    "prepublish": "npm test && npm prune"
+  },
+  "devDependencies": {
+    "istanbul": "^0.3.0",
+    "jshint": "^2.5.5",
+    "mocha": "^1.21.4",
+    "should": "^4.0.4"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/dschoeni/panoramio-api/raw/master/LICENSE"
+    }
+  ]
+}
